@@ -1,40 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Next.js CRUD com Firebase e TypeScript
 
-## Getting Started
+Este projeto é um exemplo de aplicação CRUD (Create, Read, Update, Delete) desenvolvida com **Next.js**, **Firebase** (Firestore) e **TypeScript**. Ele demonstra como integrar o Firebase ao Next.js para criar operações básicas de banco de dados em tempo real.
 
-First, run the development server:
+## Funcionalidades
+
+- **Create**: Adicionar novos registros ao Firestore.
+- **Read**: Listar todos os registros do Firestore.
+- **Update**: Editar registros existentes.
+- **Delete**: Remover registros do Firestore.
+- **Autenticação**: Integração com Firebase Authentication (opcional).
+- **TypeScript**: Tipagem estática para maior segurança e produtividade.
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- [Node.js](https://nodejs.org/) (v18 ou superior)
+- [npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
+- Conta no [Firebase](https://firebase.google.com/) e um projeto configurado.
+
+## Como configurar o projeto
+
+1. **Clone o repositório**:
+
+   ```bash
+   git clone https://github.com/JulianoDias7/Next_Firebase_CRUD.git
+   cd Next_Firebase_CRUD
+2. **Instale as dependências:**
+    ```bash
+     npm install
+3. **Configuração do Firebase:**
+    [Console do Firebase](https://console.firebase.google.com/)\
+       <sub>Crie um novo projeto ou use um existente.</sub>\
+       <sub> Selecione WEB</sub>\
+       <br>
+       ![image](https://github.com/user-attachments/assets/47177df2-66c6-4e34-8d5a-65591e998d75)
+       <br>
+       <sub>Registre o APP com o nome que você preferir</sub>\
+       <br>
+       <sub>Copie as credenciais do Firebase (configuração do SDK).</sub>\
+       <br>
+       ![image](https://github.com/user-attachments/assets/30264a0e-85a4-4564-a79b-2afe494bd7ef)
+       <br>
+       <sub>Selecione Criação > FireStore Database > Criar banco de dados</sub>
+       <br>
+       ![image](https://github.com/user-attachments/assets/83158a43-1b4d-48df-bedd-aea8cc5b070a)
+       <br>
+       <sub>Proximo</sub>
+       <br>
+       <img src="https://github.com/user-attachments/assets/012f0a66-1dbf-427f-a617-72414dedc374" style="width: 700px; height: auto;" />
+       <br>
+       <sub>Selecione "Modo de Teste" > Criar</sub>
+
+
+
+## Crie um arquivo .env.local:
+
+4. **Na raiz do projeto, crie um arquivo .env.local e adicione as credenciais do Firebase:**
+
+>env.local
+```
+NEXT_PUBLIC_FIREBASE_API_KEY=suaAPIkey,
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN =seuAuthDomain,
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=seuProjectID
+
+# Adicionar endereços sem aspas
+# Nota: Nunca compartilhe ou faça commit do arquivo .env.local. Ele deve ser adicionado ao .gitignore.
+```
+5. **Inicie o servidor de desenvolvimento:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
