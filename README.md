@@ -60,9 +60,9 @@ Antes de começar, certifique-se de ter instalado:
 
 >env.local
 ```
-NEXT_PUBLIC_FIREBASE_API_KEY=suaAPIkey,
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN =seuAuthDomain,
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=seuProjectID
+NEXT_PUBLIC_FIREBASE_API_KEY = suaAPIkey
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN = seuAuthDomain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID = seuProjectID
 
 # Adicionar endereços sem aspas
 # Nota: Nunca compartilhe ou faça commit do arquivo .env.local. Ele deve ser adicionado ao .gitignore.
