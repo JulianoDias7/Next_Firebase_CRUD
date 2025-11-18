@@ -26,9 +26,9 @@
 
 Antes de começar, certifique-se de ter instalado:
 
-- [Node.js](https://nodejs.org/) (v18 ou superior)
-- [npm](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
-- Conta no [Firebase](https://firebase.google.com/) e um projeto configurado.
+- <a href="https://nodejs.org/">![Node.js](https://img.shields.io/badge/Node.js-v18%2B-green?logo=node.js&style=for-the-badge)</a>
+- ![npm](https://img.shields.io/badge/npm-v9%2B-blue?logo=npm&style=for-the-badge) ou ![Yarn](https://img.shields.io/badge/Yarn-v1.22%2B-blue?logo=yarn&style=for-the-badge)
+
 
 ## Como configurar o projeto
 
