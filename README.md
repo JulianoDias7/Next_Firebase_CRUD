@@ -1,6 +1,6 @@
 # Next.js CRUD com Firebase e TypeScript
 
-Este projeto é um exemplo de aplicação CRUD (Create, Read, Update, Delete) desenvolvida com **Next.js**, **Firebase** (Firestore) e **TypeScript**. Ele demonstra como integrar o Firebase ao Next.js para criar operações básicas de banco de dados em tempo real.
+**Este projeto é um exemplo de aplicação CRUD (Create, Read, Update, Delete) desenvolvida com ***Next.js***, ***Firebase*** (Firestore) e ***TypeScript***. Ele demonstra como integrar o Firebase ao Next.js para criar operações básicas de banco de dados em tempo real.**
 
 ## Funcionalidades
 
@@ -68,7 +68,8 @@ NEXT_PUBLIC_FIREBASE_PROJECT_ID = seuProjectID
 # Nota: Nunca compartilhe ou faça commit do arquivo .env.local. Ele deve ser adicionado ao .gitignore.
 ```
 5. **Inicie o servidor de desenvolvimento:**
-
 ```bash
 npm run dev
+```
+
 
